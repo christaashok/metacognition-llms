@@ -1,0 +1,30 @@
+/* Custom styles for the Metacognition Project */
+
+/* Gradient header matching MSV theme */
+.md-header {
+  background: linear-gradient(90deg, #1a237e, #3949ab, #5c6bc0);
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 600;
+  color: #1a237e;
+}
+
+/* Admonition blocks */
+.md-typeset .admonition.info {
+  border-left: 0.25em solid #ff9800;
+  background-color: #fff8e1;
+}
+
+/* Accent links */
+a {
+  color: #ff9800;
+}
+
+/* Code blocks */
+code {
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
