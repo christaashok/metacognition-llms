@@ -50,3 +50,38 @@ code {
 .md-nav__link--active::before {
   background-color: #00bcd4 !important;
 }
+
+/* --- Force override all Material accent colors (no more orange/amber) --- */
+:root {
+  --md-accent-fg-color: #00bcd4 !important; /* cyan */
+  --md-accent-bg-color: #e0f7fa !important; /* light cyan background for highlights */
+  --md-typeset-a-color: #00bcd4 !important; /* links */
+  --md-primary-fg-color: #1a237e !important; /* keep your indigo header */
+}
+
+/* Fix specific components that use inline accent references */
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover,
+.md-tabs__link--active,
+.md-tabs__link:focus,
+.md-tabs__link:hover {
+  color: var(--md-accent-fg-color) !important;
+}
+
+.md-nav__link--active::before {
+  background-color: var(--md-accent-fg-color) !important;
+}
+
+/* Links and hover text */
+.md-typeset a,
+.md-typeset a:focus,
+.md-typeset a:hover {
+  color: var(--md-accent-fg-color) !important;
+}
+
+/* Admonition borders (info, tip, etc.) */
+.md-typeset .admonition,
+.md-typeset details {
+  border-left-color: var(--md-accent-fg-color) !important;
+}
