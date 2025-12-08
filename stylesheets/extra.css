@@ -85,3 +85,19 @@ code {
 .md-typeset details {
   border-left-color: var(--md-accent-fg-color) !important;
 }
+/* --- Breadcrumb color customization --- */
+.md-ellipsis a,
+.md-nav__item a,
+.md-breadcrumb__link {
+  color: #26a69a !important; /* choose your new color — teal looks good with indigo */
+}
+
+.md-ellipsis a:hover,
+.md-breadcrumb__link:hover {
+  color: #00bcd4 !important; /* hover color */
+}
+
+/* Optional: Make the breadcrumb separator (›) lighter */
+.md-breadcrumb__item:not(:last-child)::after {
+  color: #b0bec5 !important; /* soft grey-blue separator */
+}
