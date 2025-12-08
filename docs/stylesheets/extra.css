@@ -1,65 +1,40 @@
-/* Custom styles for the Metacognition Project */
+/* ==========================================================
+   Custom Styles for the Metacognition Project (MSV)
+   ========================================================== */
 
-/* Gradient header matching MSV theme */
+/* --- Gradient header matching MSV theme --- */
 .md-header {
   background: linear-gradient(90deg, #1a237e, #3949ab, #5c6bc0);
 }
 
-/* Headings */
+/* --- Headings --- */
 h1, h2, h3 {
   font-weight: 600;
   color: #1a237e;
 }
 
-/* Admonition blocks */
+/* --- Admonition blocks --- */
 .md-typeset .admonition.info {
-  border-left: 0.25em solid #ff9800;
-  background-color: #fff8e1;
+  border-left: 0.25em solid #00bcd4; /* Cyan accent */
+  background-color: #e0f7fa; /* Light cyan background */
 }
 
-/* Accent links */
-a {
-  color: #ff9800;
-}
-
-/* Code blocks */
+/* --- Code blocks --- */
 code {
   background-color: #f5f5f5;
   padding: 0.2em 0.4em;
   border-radius: 4px;
 }
 
-/* --- Fix orange accent color --- */
-.md-nav__link--active,
-.md-nav__link:focus,
-.md-nav__link:hover,
-.md-tabs__link--active,
-.md-tabs__link:focus,
-.md-tabs__link:hover {
-  color: #00bcd4 !important; /* Cyan accent - THIS CAN BE CHANGED */
-}
-
-/* Adjust selected list marker and icons */
-.md-typeset a,
-.md-typeset a:focus,
-.md-typeset a:hover {
-  color: #00bcd4 !important;
-}
-
-/* Active sidebar indicator (the little line on the left) */
-.md-nav__link--active::before {
-  background-color: #00bcd4 !important;
-}
-
-/* --- Force override all Material accent colors (no more orange/amber) --- */
+/* --- Global accent override (replaces orange with cyan) --- */
 :root {
-  --md-accent-fg-color: #00bcd4 !important; /* cyan */
-  --md-accent-bg-color: #e0f7fa !important; /* light cyan background for highlights */
-  --md-typeset-a-color: #00bcd4 !important; /* links */
-  --md-primary-fg-color: #1a237e !important; /* keep your indigo header */
+  --md-accent-fg-color: #00bcd4 !important; /* Cyan accent */
+  --md-accent-bg-color: #e0f7fa !important; /* Light cyan background */
+  --md-typeset-a-color: #00bcd4 !important; /* Link color */
+  --md-primary-fg-color: #1a237e !important; /* Indigo header */
 }
 
-/* Fix specific components that use inline accent references */
+/* --- Navigation and tab hover/active states --- */
 .md-nav__link--active,
 .md-nav__link:focus,
 .md-nav__link:hover,
@@ -73,31 +48,81 @@ code {
   background-color: var(--md-accent-fg-color) !important;
 }
 
-/* Links and hover text */
+/* --- Links and hover text --- */
 .md-typeset a,
 .md-typeset a:focus,
 .md-typeset a:hover {
   color: var(--md-accent-fg-color) !important;
 }
 
-/* Admonition borders (info, tip, etc.) */
+/* --- Admonition borders (info, tip, etc.) --- */
 .md-typeset .admonition,
 .md-typeset details {
   border-left-color: var(--md-accent-fg-color) !important;
 }
-/* --- Breadcrumb color customization --- */
+
+/* ==========================================================
+   🌈 BREADCRUMB COLOR CUSTOMIZATION OPTIONS
+   ========================================================== */
+
+/* --- Elegant Teal (recommended for your cyan–indigo theme) --- */
 .md-ellipsis a,
 .md-nav__item a,
 .md-breadcrumb__link {
-  color: #26a69a !important; /* choose your new color — teal looks good with indigo */
+  color: #26a69a !important; /* Teal base */
 }
-
 .md-ellipsis a:hover,
 .md-breadcrumb__link:hover {
-  color: #00bcd4 !important; /* hover color */
+  color: #00bcd4 !important; /* Cyan hover */
+}
+.md-breadcrumb__item:not(:last-child)::after {
+  color: #b0bec5 !important; /* Soft grey-blue separator */
 }
 
-/* Optional: Make the breadcrumb separator (›) lighter */
-.md-breadcrumb__item:not(:last-child)::after {
-  color: #b0bec5 !important; /* soft grey-blue separator */
+/* --- Professional Blue --- */
+/*
+.md-ellipsis a,
+.md-nav__item a,
+.md-breadcrumb__link {
+  color: #1e88e5 !important;  /* Primary blue */
 }
+.md-ellipsis a:hover,
+.md-breadcrumb__link:hover {
+  color: #64b5f6 !important;  /* Light blue hover */
+}
+.md-breadcrumb__item:not(:last-child)::after {
+  color: #90a4ae !important;  /* Muted separator */
+}
+*/
+
+/* --- Monochrome Indigo (matches your header gradient) --- */
+/*
+.md-ellipsis a,
+.md-nav__item a,
+.md-breadcrumb__link {
+  color: #3949ab !important;  /* Deep indigo base */
+}
+.md-ellipsis a:hover,
+.md-breadcrumb__link:hover {
+  color: #5c6bc0 !important;  /* Softer indigo hover */
+}
+.md-breadcrumb__item:not(:last-child)::after {
+  color: #9fa8da !important;  /* Pale separator */
+}
+*/
+
+/* --- Minimal Grey --- */
+/*
+.md-ellipsis a,
+.md-nav__item a,
+.md-breadcrumb__link {
+  color: #546e7a !important;  /* Neutral grey base */
+}
+.md-ellipsis a:hover,
+.md-breadcrumb__link:hover {
+  color: #90a4ae !important;  /* Subtle hover grey */
+}
+.md-breadcrumb__item:not(:last-child)::after {
+  color: #cfd8dc !important;  /* Light separator */
+}
+*/
