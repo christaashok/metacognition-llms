@@ -850,27 +850,27 @@
 <p>This mapping captures the dynamic interplay between <em>intuition</em> and <em>reasoning</em> in both humans and LLMs.</p>
 <hr />
 <h2 id="role-transition-dynamics">Role Transition Dynamics<a class="headerlink" href="#role-transition-dynamics" title="Permanent link">&para;</a></h2>
-<p>Let ( G(V, E, W(M)) ) represent the LLM ensemble graph:
-- (V) = nodes (agents)
-- (E) = edges (communication)
-- (W(M)) = weights determined by the Metacognitive State Vector (M = (ER, CE, EM, CI, PI))</p>
+<p>Let <span class="arithmatex">\( G(V, E, W(M)) \)</span> represent the LLM ensemble graph:
+- <span class="arithmatex">\(V\)</span> = nodes (agents)
+- <span class="arithmatex">\(E\)</span> = edges (communication)
+- <span class="arithmatex">\(W(M)\)</span> = weights determined by the Metacognitive State Vector <span class="arithmatex">\(M = (ER, CE, EM, CI, PI)\)</span></p>
 <p>Each node’s role (e.g., <em>Domain Expert</em>, <em>Critic</em>, <em>Evaluator</em>, <em>Synthesizer</em>) is assigned dynamically based on MSV-weighted optimization.</p>
 <p>The formal role transition framework is:</p>
-<p>$$
+<div class="arithmatex">\[
 \Gamma = (R, S, T, M)
-$$</p>
+\]</div>
 <p>where<br />
-(R = {r_1, ..., r_k}) → roles<br />
-(S = {s_1, ..., s_n}) → states<br />
-(T: R \times S \rightarrow P(R)) → allowable transitions  </p>
+<span class="arithmatex">\(R = \{r_1, ..., r_k\}\)</span> → roles<br />
+<span class="arithmatex">\(S = \{s_1, ..., s_n\}\)</span> → states<br />
+<span class="arithmatex">\(T: R \times S \rightarrow P(R)\)</span> → allowable transitions  </p>
 <hr />
 <h2 id="transition-triggers">Transition Triggers<a class="headerlink" href="#transition-triggers" title="Permanent link">&para;</a></h2>
 <p>System 2 activation occurs when any of the following thresholds are met:</p>
 <ul>
-<li>(CE &lt; \tau_{CE}) → low correctness  </li>
-<li>(CI &gt; \tau_{CI}) → high conflict  </li>
-<li>(PI &gt; \tau_{PI}) → high importance  </li>
-<li>(ER &gt; \tau_{ER}) → strong emotional salience  </li>
+<li><span class="arithmatex">\(CE &lt; \tau_{CE}\)</span> → low correctness  </li>
+<li><span class="arithmatex">\(CI &gt; \tau_{CI}\)</span> → high conflict  </li>
+<li><span class="arithmatex">\(PI &gt; \tau_{PI}\)</span> → high importance  </li>
+<li><span class="arithmatex">\(ER &gt; \tau_{ER}\)</span> → strong emotional salience  </li>
 </ul>
 <p>When triggered, additional ensemble nodes engage in reflective evaluation or deeper analysis.</p>
 <hr />
@@ -942,6 +942,10 @@ This enables dynamic self-organization and <em>distributed metacognition</em> ac
     
     
       <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
