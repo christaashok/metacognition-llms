@@ -28,3 +28,25 @@ code {
   padding: 0.2em 0.4em;
   border-radius: 4px;
 }
+
+/* --- Fix orange accent color --- */
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover,
+.md-tabs__link--active,
+.md-tabs__link:focus,
+.md-tabs__link:hover {
+  color: #00bcd4 !important; /* Cyan accent - THIS CAN BE CHANGED */
+}
+
+/* Adjust selected list marker and icons */
+.md-typeset a,
+.md-typeset a:focus,
+.md-typeset a:hover {
+  color: #00bcd4 !important;
+}
+
+/* Active sidebar indicator (the little line on the left) */
+.md-nav__link--active::before {
+  background-color: #00bcd4 !important;
+}
