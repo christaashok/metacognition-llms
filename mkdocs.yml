@@ -9,7 +9,7 @@ theme:
   palette:
     - scheme: default
       primary: indigo
-      accent: amber
+      accent: cyan
   features:
     - navigation.tabs
     - navigation.top
