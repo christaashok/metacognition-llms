@@ -6,5 +6,5 @@ This research explores **metacognition** and **self-awareness** in ensembles of 
 !!! info "Research Overview"
     **Institution:** Fitchburg State University  
     **PI:** Dr. Ricky J. Sethi  
-    **Collaborators:** Dr. Hefei Qiu, Dr. Charles Courchaine, Joshua Iacoboni  
+    **Collaborators:** Dr. Hefei Qiu, Dr. Charles Courchaine, Joshua Iacoboni   
     **Conference:** ACM CIKM 2025 - Seoul, South Korea
