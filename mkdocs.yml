@@ -22,16 +22,14 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Literature Review:
-      - Overview: literature-review.md
-      - Conference Paper Review: litreview-conference.md
-      - Journal Paper Review: litreview-journal.md
+  - Introduction: introduction.md
   - Framework:
       - MSV Components: msv-components.md
       - System Transitions: system-transitions.md
       - Dual-Process Theory: dual-process.md
+  - Demo: demo.md
+  - Team: team.md
   - Project Details: project-details.md
-  - References: references.md
 
 markdown_extensions:
   - admonition
