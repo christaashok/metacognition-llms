@@ -1,32 +1,31 @@
-/* ==========================================================
-   Custom Styles for the Metacognition Project (MSV)
+/* Custom Styles for the Metacognition Project (MSV)
    ========================================================== */
 
-/* --- Gradient header matching MSV theme --- */
+/* Gradient header matching MSV theme */
 .md-header {
   background: linear-gradient(90deg, #1a237e, #3949ab, #5c6bc0);
 }
 
-/* --- Headings --- */
+/* Headings */
 h1, h2, h3 {
   font-weight: 600;
   color: #1a237e;
 }
 
-/* --- Admonition blocks --- */
+/* Admonition blocks */
 .md-typeset .admonition.info {
   border-left: 0.25em solid #00bcd4; /* Cyan accent */
   background-color: #e0f7fa; /* Light cyan background */
 }
 
-/* --- Code blocks --- */
+/* Code blocks */
 code {
   background-color: #f5f5f5;
   padding: 0.2em 0.4em;
   border-radius: 4px;
 }
 
-/* --- Global accent override (replaces orange with cyan) --- */
+/* Global accent override (replaces orange with cyan) */
 :root {
   --md-accent-fg-color: #00bcd4 !important; /* Cyan accent */
   --md-accent-bg-color: #e0f7fa !important; /* Light cyan background */
@@ -34,7 +33,7 @@ code {
   --md-primary-fg-color: #1a237e !important; /* Indigo header */
 }
 
-/* --- Navigation and tab hover/active states --- */
+/* Navigation and tab hover/active states */
 .md-nav__link--active,
 .md-nav__link:focus,
 .md-nav__link:hover,
@@ -48,24 +47,23 @@ code {
   background-color: var(--md-accent-fg-color) !important;
 }
 
-/* --- Links and hover text --- */
+/* Links and hover text */
 .md-typeset a,
 .md-typeset a:focus,
 .md-typeset a:hover {
   color: var(--md-accent-fg-color) !important;
 }
 
-/* --- Admonition borders (info, tip, etc.) --- */
+/* Admonition borders (info, tip, etc.) */
 .md-typeset .admonition,
 .md-typeset details {
   border-left-color: var(--md-accent-fg-color) !important;
 }
 
-/* ==========================================================
-   🌈 BREADCRUMB COLOR CUSTOMIZATION OPTIONS
+/*  BREADCRUMB COLOR CUSTOMIZATION OPTIONS
    ========================================================== */
 
-/* --- Elegant Teal (recommended for your cyan–indigo theme) --- */
+/*  Elegant Teal (recommended for your cyan–indigo theme)  */
 .md-ellipsis a,
 .md-nav__item a,
 .md-breadcrumb__link {
@@ -79,7 +77,7 @@ code {
   color: #b0bec5 !important; /* Soft grey-blue separator */
 }
 
-/* --- Professional Blue --- */
+/*  Professional Blue  */
 /*
 .md-ellipsis a,
 .md-nav__item a,
@@ -95,7 +93,7 @@ code {
 }
 */
 
-/* --- Monochrome Indigo (matches your header gradient) --- */
+/*  Monochrome Indigo (matches your header gradient)  */
 /*
 .md-ellipsis a,
 .md-nav__item a,
@@ -111,7 +109,7 @@ code {
 }
 */
 
-/* --- Minimal Grey --- */
+/*  Minimal Grey  */
 /*
 .md-ellipsis a,
 .md-nav__item a,
@@ -126,3 +124,8 @@ code {
   color: #cfd8dc !important;  /* Light separator */
 }
 */
+/* Add subtle icons before H1 headers */
+.md-typeset h1::before {
+  content: "🔹 ";
+  color: #00bcd4;
+}
