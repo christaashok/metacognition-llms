@@ -4,6 +4,7 @@ repo_url: https://github.com/christaashok/metacognition-llms
 
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: images/logo.png
   favicon: images/favicon.png
   palette:
