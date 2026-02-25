@@ -3,7 +3,7 @@ site_url: https://christaashok.github.io/metacognition-llms
 repo_url: https://github.com/christaashok/metacognition-llms
 
 theme:
-  name: material 
+  name: material
   logo: images/logo.png
   favicon: images/favicon.png
   palette:
@@ -13,6 +13,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.instant
+    - navigation.tracking
     - toc.integrate
     - content.code.copy
     - content.action.edit
