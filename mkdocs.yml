@@ -22,7 +22,6 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Introduction: introduction.md
   - Framework:
       - MSV Components: msv-components.md
       - System Transitions: system-transitions.md
